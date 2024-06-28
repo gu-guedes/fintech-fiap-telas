@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(120deg,  #ff416c, #ff4b2b, #ffffff);
+    background-size: 300% 300%;
+    animation: gradient-animation 10s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    font-weight: 700;
+}
+
+.form-group label {
+    font-weight: 500;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #ff416c;
+    border: none;
+}
+
+.btn-light:hover {
+    background-color: #f8f9fa;
+    color: #ff4b2b;
+}
+
+.text-white {
+    color: white !important;
+}
+
+input[type="email"], input[type="password"] {
+    border-radius: 0.25rem;
+    border: 1px solid #ced4da;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 1rem;
+    background-color: #f8f9fa;
+}
